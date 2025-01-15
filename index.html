@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wydział Kształtowania Środowiska i Rolnictwa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        main img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function showAboutPage() {
+            const mainContent = document.querySelector('main');
+            mainContent.innerHTML = `
+                <h2>O Wydziale</h2>
+                <p>Witamy na stronie Wydziału Kształtowania Środowiska i Rolnictwa. Nasz wydział specjalizuje się w edukacji i badaniach związanych z ochroną środowiska i rozwojem rolnictwa.</p>
+                <p>Na naszym wydziale oferujemy kierunki studiów takie jak:</p>
+                <ul style="text-align: left; display: inline-block;">
+                    <li>Agrobioinżynieria</li>
+                    <li>Architektura Krajobrazu</li>
+                    <li>Ochrona Środowiska</li>
+                    <li>Odnawialne Źródła Energii</li>
+                    <li>Rolnictwo</li>
+                    <li>Uprawa Winorośli i Winiarstwo</li>
+                </ul>
+                <img src="https://agro.zut.edu.pl/fileadmin/pliki/wksir/logotypy/wksir_2.jpg" alt="O Wydziale">
+            `;
+        }
+
+        function showHomePage() {
+            const mainContent = document.querySelector('main');
+            mainContent.innerHTML = `
+                <h2>Witamy na stronie</h2>
+                <p>Odkryj możliwości, które oferuje Wydział Kształtowania Środowiska i Rolnictwa. Nasze kierunki studiów i badania łączą nowoczesność z tradycją.</p>
+                <img src="https://agro.zut.edu.pl/fileadmin/pliki/wksir/logotypy/wksir_1.jpg" alt="Strona Główna">
+            `;
+        }
+
+        function showContactPage() {
+            const mainContent = document.querySelector('main');
+            mainContent.innerHTML = `
+                <h2>Kontakt</h2>
+                <p><strong>Zachodniopomorski Uniwersytet Technologiczny w Szczecinie</strong></p>
+                <p>Wydział Kształtowania Środowiska i Rolnictwa</p>
+                <p>al. Piastów 17<br>70-310 Szczecin</p>
+                <p>Email: <a href="mailto:dziekanat.wksir@zut.edu.pl">dziekanat.wksir@zut.edu.pl</a></p>
+                <p>Telefon: 91 449 62 00</p>
+                <img src="https://agro.zut.edu.pl/fileadmin/pliki/wksir/logotypy/wksir_3.jpg" alt="Kontakt">
+            `;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Wydział Kształtowania Środowiska i Rolnictwa</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showHomePage()">Strona Główna</a></li>
+            <li><a href="#" onclick="showAboutPage()">O Wydziale</a></li>
+            <li><a href="#" onclick="showContactPage()">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Witamy na stronie</h2>
+        <p>Odkryj możliwości, które oferuje Wydział Kształtowania Środowiska i Rolnictwa. Nasze kierunki studiów i badania łączą nowoczesność z tradycją.</p>
+        <img src="https://agro.zut.edu.pl/fileadmin/pliki/wksir/logotypy/wksir_1.jpg" alt="Strona Główna">
+    </main>
+    <footer>
+        <p>&copy; 2024 Wydział Kształtowania Środowiska i Rolnictwa</p>
+    </footer>
+</body>
+</html>
